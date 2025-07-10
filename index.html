@@ -50,15 +50,9 @@
 
   <script>
   function trackSpotifyClick() {
-    if (window.rdt) {
-      window.rdt('track', 'ViewContent', {
-        item_count: 1,
-        transaction_id: 'spotify_click_001',
-      });
-    }
-    setTimeout(function () {
-      window.location.href = url;
-    }, 300); // 300ms reichen meist
+    rdt('track', 'ViewContent', {
+    conversion_id: 'spotify_1'
+});
   }
 </script>
   
