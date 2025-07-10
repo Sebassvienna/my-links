@@ -8,6 +8,21 @@
 <script>
 !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_hanwmk50g8hx');rdt('track', 'PageVisit');
 </script>
+
+  <script>
+  function trackSpotifyClick() {
+    if (window.rdt) {
+      window.rdt('track', 'ViewContent', {
+        value: 1.0,
+        item_count: 1,
+        transaction_id: 'spotify_click_001',
+        content_name: 'Spotify Profile',
+        content_type: 'external_link',
+        currency: 'EUR'
+      });
+    }
+  }
+</script>
 <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
 <!-- End Reddit Pixel -->
 
@@ -43,9 +58,24 @@
   
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center;">
   <a id="spotify" href="https://open.spotify.com/intl-de/artist/7muMw2Th5RHimYlr6B4YB7?si=kTZ8Plm6RaK9bglzLMgv6g"
-     target="_blank" onclick="rdt('track', 'SpotifyClick')">SPOTIFY
+     target="_blank" onclick="trackSpotifyClick()">SPOTIFY
     <!--img src="https://sebassdnb.carrd.co/assets/images/image02.svg?v=ee1705e9" alt="Spotify" style="width:50px;"-->
   </a>
+
+  <script>
+  function trackSpotifyClick() {
+    if (window.rdt) {
+      window.rdt('track', 'ViewContent', {
+        value: 1.0,
+        item_count: 1,
+        transaction_id: 'spotify_click_001',
+        content_name: 'Spotify Profile',
+        content_type: 'external_link',
+        currency: 'EUR'
+      });
+    }
+  }
+</script>
 
 
   <a id="apple" href="https://music.apple.com/at/album/live-a-little-ep/1821368472"
