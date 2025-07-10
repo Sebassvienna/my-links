@@ -9,16 +9,6 @@
 !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_hanwmk50g8hx');rdt('track', 'PageVisit');
 </script>
 
-  <script>
-  function trackSpotifyClick() {
-    if (window.rdt) {
-      window.rdt('track', 'ViewContent', {
-        item_count: 1,
-        transaction_id: 'spotify_click_001',
-      });
-    }
-  }
-</script>
 <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
 <!-- End Reddit Pixel -->
 
@@ -66,8 +56,12 @@
         transaction_id: 'spotify_click_001',
       });
     }
+    setTimeout(function () {
+      window.location.href = url;
+    }, 300); // 300ms reichen meist
   }
 </script>
+  
 
 
   <a id="apple" href="https://music.apple.com/at/album/live-a-little-ep/1821368472"
